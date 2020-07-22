@@ -1,0 +1,50 @@
+body {
+    font-size: 12px;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 60px 140px;
+}
+
+.add-food {
+    padding-top: 100px;
+    border-bottom: 1px solid #000000;
+}
+
+.header {
+    color: white;
+    background: black;
+    height: 40px;
+    padding: 10px 140px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.label-blue {
+    color: #007BFF;
+    font-size: 12px;
+}
+
+.btn-blue {
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    padding: 14px 40px;
+    border-width: 0;
+    height: 40px;
+}
+
+.form-control {
+    border: 1px solid #707070;
+    padding: 14px 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.list {
+    list-style-type: square;
+}
