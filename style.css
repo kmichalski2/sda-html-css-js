@@ -30,11 +30,15 @@ body {
 
 .btn-blue {
     color: white;
-    background-color: #007BFF;
+    background-color: #007bff;
     border-radius: 5px;
     padding: 14px 40px;
     border-width: 0;
     height: 40px;
+}
+
+.btn-blue:hover {
+    background-color: #003c84;
 }
 
 .form-control {
@@ -45,6 +49,14 @@ body {
     height: 40px;
 }
 
+.form-control:focus {
+    outline-width: 0;
+}
+
 .list {
     list-style-type: square;
+}
+
+.error {
+    border: 2px solid red;
 }

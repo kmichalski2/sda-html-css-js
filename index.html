@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <script src="main.js" defer></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </head>
 <body>
-    <header class="header">
-        OrderFood
+    <header class="navbar navbar-light bg-dark mb-5">
+        <a class="navbar-brand" href="#">OrderFood</a>
     </header>
 
-    <section class="wrapper add-food">
+    <section class="container add-food mb-5">
         <h2>Choose food:</h2>
-        <form>
-            <label class="label-blue" for="foodName">Provide food that you want to order</label>
-            <input id="foodName" class="form-control" name="foodName" type="text" required>
-            <button class="btn-blue">Add</button>
-        </form>
+        <label class="label-blue" for="foodName">Provide food that you want to order</label>
+        <input id="foodName" class="form-control" name="foodName" type="text" required>
+        <button class="btn btn-primary" id="buttonAdd">Add</button>
     </section>
-    <section class="wrapper order">
+    <section class="container order mb-5">
         <h2>Order:</h2>
-        <ul class="list">
-            <li>Pizza</li>
-            <li>Fries</li>
-            <li>Cola</li>
-        </ul>
-        <button class="btn-blue">Order</button>
+        <ul class="list" id="orderList"></ul>
+        <button class="btn btn-primary" id="orderButton" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Order</button>
     </section>
+
+    <div class="container alert alert-warning">Informacje z strony</div>
 </body>
 
 </html>
